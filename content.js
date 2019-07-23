@@ -1,2 +1,2 @@
 document.write("What a Day! Lets do some Arithmatics")
-document
+alert("Dont Click on the OK")
