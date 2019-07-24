@@ -3,25 +3,40 @@
 <head>
     <title>Pairing with Dibbs</title>
     <meta name="Learning HTML CSS3 and Javascript" description="HTML, CCS, CCS3, JS, Javascript">
-    <script language="javascript" type="text/javascript" src="content.js"></script>
     <link type="text/CSS" rel="stylesheet" href="mystyles.css" media="all" />
+    <script language="Javascript" type="text/Javascript" src="mycontent.js"></script>
+
 </head>
 
 <body>
+    <script>
+        function add() {
+            var a = document.getElementById("num1").value)
+        var b = document.getElementById("num2").value)
+        // // var c = parseFloat(a) + parseFloat(b);
+        // // document.getElementById("sum").value = c;
+        // var a = 10;
+        // var b = 34;
+        var c = 0;
+        c = a + b;
+        alert(c);
+        }
+    </script>
     <p id=title1> Name: Dibyendu
         <br> Attitude: Cool Personality: Introvert Skills: Patience, cheapstake
     </p>
     <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque eius dolore cupiditate repellat velit? Nulla perspiciatis veniam earum. Quam beatae placeat laboriosam officia nulla neque enim consectetur, vel exercitationem. Atque!
     </p>
-    <div id=num1>
+    <div id=frm>
         Enter number:
         <input type="number" name="frst" maxlength="10" id="num1">
         <br>Enter number:
         <input type="number" name="sec" maxlength="10" id="num2">
         <br>Sum of the Numbers:
-        <input type="text" readonly="readonly" name="sum" id="sum">
-        <input type="button" onclick="summation()" name="calc" value="OK">
+        <input type="text" name="Calculate" id="sum">
+        <input type="button" onclick="add()" name="calc" value="OK">
+        <!-- <button onclick="add()">Calculate</button> -->
     </div>
     <div id="msum">
         Enter multiple number to sum them(separated by coma ","):
