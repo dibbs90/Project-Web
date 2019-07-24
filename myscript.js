@@ -11,3 +11,14 @@ function add() {
     // var c = a + b;
     document.getElementById("sum").value = c;
     }
+
+    function mltadd() {
+        var a= document.getElementById("nms").value;
+        var arr = a.split(",");
+        var s=0;
+        for (let i = 0; i < arr.length; i++) {
+            var s=s+Number(arr[i]);      
+        }
+         
+        document.getElementById("tot1").value=s;
+    }
