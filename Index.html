@@ -9,13 +9,17 @@
 </head>
 
 <body>
-        <p id=title1> Name: Dibyendu
-        <br> Attitude: Cool Personality: Introvert Skills: Patience, cheapstake
+    <p id=title1> Name: Dibyendu
+        <br> Attitude: Cool
+        <br>Personality: Introvert
+        <br>Skills: Patience, cheapstake
     </p>
     <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque eius dolore cupiditate repellat velit? Nulla perspiciatis veniam earum. Quam beatae placeat laboriosam officia nulla neque enim consectetur, vel exercitationem. Atque!
     </p>
+
     <div id=frm>
+        <!-- this is to add 2 numbers -->
         Enter number:
         <input type="number" name="frst" maxlength="10" id="num1">
         <br>Enter number:
@@ -23,15 +27,28 @@
         <br>Sum of the Numbers:
         <input type="text" readonly name="Calculate" id="sum">
         <input type="button" onclick="add()" name="calc" value="OK">
-        <!-- <button onclick="add()">Calculate</button> -->
+        <br><br>
     </div>
+
     <div id="msum">
+        <!-- this is to add multiple numbers seperated by coma -->
         Enter multiple number to sum them(separated by coma ","):
         <input type=text name="allnms" id="nms">
         <br>Summation:
         <input type="text" readonly name="tot1" id="tot1">
         <input type="button" onclick="mltadd()" name="MultiAdd" value="Add">
-        </div>
+        <br><br>
+    </div>
+
+    <div id="srt">
+        <!-- this is to sort numbers in asceding order -->
+        Enter numbers in random order(separated by coma ","):
+        <input type="text" name="rand" id="rand">
+        <br>
+        <input type="text" name="asc" id="asc">
+        <input type="button" onclick="sort()" name="sort" value="Sort">
+        <br><br>
+    </div>
 </body>
 
 </html>
