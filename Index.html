@@ -8,12 +8,22 @@
     <script language="Javascript" type="text/Javascript" src="myscript.js"></script>
 </head>
 
-<body>
+<body id="bdy">
+    <script>
+        //var today = new Date();
+        //var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var today = new Date();
+        var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date + ' ' + time;
+        document.write(dateTime);
+    </script>
     <p id=title1> Name: Dibyendu
         <br> Attitude: Cool
         <br>Personality: Introvert
         <br>Skills: Patience, cheapstake
     </p>
+    <p></p>
     <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque eius dolore cupiditate repellat velit? Nulla perspiciatis veniam earum. Quam beatae placeat laboriosam officia nulla neque enim consectetur, vel exercitationem. Atque!
     </p>
@@ -48,6 +58,7 @@
         <input type="text" name="asc" id="asc">
         <input type="button" onclick="sort()" name="sort" value="Sort">
         <br><br>
+        <button type="button" onclick="darkmode()">Dark Mode</button>
     </div>
 </body>
 

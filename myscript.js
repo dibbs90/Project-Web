@@ -27,3 +27,13 @@ function sort() {
     alert("I'm not ready yet");
 
 }
+
+function greet(parameterVariable) {
+    console.log("What's up ma nigga")
+}
+
+function darkmode() {
+    document.body.style.backgroundColor = 'black';
+    document.style.color = 'white';
+    document.border.style.color = 'yellow';
+}
